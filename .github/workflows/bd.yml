@@ -49,4 +49,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          python bd.py ${{ github.event.inputs.servidor }} ${{ github.event.inputs.user }} ${{ github.event.inputs.pass }}
+          python basededados.py ${{ github.event.inputs.servidor }} ${{ github.event.inputs.user }} ${{ github.event.inputs.pass }}
