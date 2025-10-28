@@ -21,7 +21,7 @@ on:
         required: true
         
       pass:
-        default: **********
+        default: admin
         required: true
 
       opcao:
