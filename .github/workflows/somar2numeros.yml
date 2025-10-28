@@ -5,13 +5,25 @@ name: Executa um script Python que permite somar dois números
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      ambiente:
+        type: environment
+
+      numero1:
+        default: 10
+        required: true
+      
+      numero2:
+        default: 20
+        required: true
+
+      opcao:
+        type: boolean
+        description: Confirme a execução
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
