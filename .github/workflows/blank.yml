@@ -31,4 +31,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          python exemplo.py marcos freitas
+          python exemplo.py marcos pereira freitas 
